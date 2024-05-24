@@ -1,6 +1,9 @@
 **README for `marks_analysis`**
 
 **Marks Analysis Package**
+`marks_analysis` is a Python package designed for analyzing exam marks data. It includes functions for preprocessing data, performing statistical analyses, generating visualizations, and saving results. The **README for `marks_analysis`**
+
+**Marks Analysis Package**
 `marks_analysis` is a Python package designed for analyzing exam marks data. It includes functions for preprocessing data, performing statistical analyses, generating visualizations, and saving results. The package ensures that the analysis is robust and adaptable to changes in the dataset, including the absence of specific examiners.
 
 ### Table of Contents
@@ -17,6 +20,11 @@
 
 To keep this package-toolkit modular and easily editable, installing via Git or pip is unnecessary. Instead, simply use the provided folder structure and follow the guidelines in `example_usage.py`. This approach allows users to directly work with the provided code and make any necessary adjustments without the need for complex installation procedures or ongoing package maintenance.
 
+However, if you prefer to install the package directly into Python, you can do so by following these steps:
+
+1.  **Install Directly from GitHub**:
+```pip install git+https://github.com/nickj95/marks_analysis.git```
+
 ### Usage
 
 Here’s an example of how to use the package:
@@ -25,6 +33,10 @@ Here’s an example of how to use the package:
 ```
     from data_processing import load_data, preprocess_marker_data, preprocess_paper_data
     from analysis import analyze_data, analyze_all_examiners
+```
+If installed from Github use the following import function: 
+```
+from marks_analysis import load_data, preprocess_marker_data, preprocess_paper_data, analyze_data, analyze_all_examiners
 ```
 ```
     filenames = ["data/{file1}.xlsx", "data/{file2}.xlsx"]  
