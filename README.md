@@ -1,6 +1,6 @@
 **README for `marks_analysis`**
 
-**Marks Analysis**
+**Marks Analysis Package**
 `marks_analysis` is a Python package designed for analyzing exam marks data. It includes functions for preprocessing data, performing statistical analyses, generating visualizations, and saving results. The package ensures that the analysis is robust and adaptable to changes in the dataset, including the absence of specific examiners.
 
 ### Table of Contents
@@ -35,25 +35,27 @@ If installed from Github use the following import function:
 ```
 from marks_analysis import load_data, preprocess_marker_data, preprocess_paper_data, analyze_data, analyze_all_examiners
 ```
-Then load in the data. 
 ```
     filenames = ["data/{file1}.xlsx", "data/{file2}.xlsx"]  
     sheet_names = [[0, 1], [0, 1]]  
     dfs = load_data(filenames, sheet_names)
    ```
-If you have several files, update ```sheet_names``` accordingly. The primary data is usually found within the first and second sheets within a workbook. If that ever changes update the ```sheet_names``` values
+If you have several files, update ```sheet_names``` accordingly. The primary data is usually found within the first and second sheets within a workbook. If that ever changes update the ```sheet_names``` values]
+
 2.  **Preprocess the data:**
 ```
     df_marker = preprocess_marker_data(dfs[0].append(dfs[2]))  
     df_paper = preprocess_paper_data(dfs[1].append(dfs[3]))
 ```
 3.  **Analyze data by examiner and marks:**
+4. 
 ```
 	analyze_data(df_marker, 'Examiner', 'Initial Mark', boards=[None, 'DPPE', 'DMHP'])  
     analyze_data(df_marker, 'Examiner', 'Agreed Mark', boards=[None, 'DPPE', 'DMHP'])  
     analyze_data(df_paper, 'Paper', 'Agreed Mark', boards=[None, 'DPPE', 'DMHP'])
  ```
  Note: here you may add or remove different examination boards. 
+ 
  4.  **Analyze data by examinerer:**
 ```
 analyze_all_examiners(df_marker)
