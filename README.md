@@ -38,6 +38,7 @@ If installed from Github use the following import function:
 ```
 from marks_analysis import load_data, preprocess_marker_data, preprocess_paper_data, analyze_data, analyze_all_examiners
 ```
+Then load in the data. 
 ```
     filenames = ["data/{file1}.xlsx", "data/{file2}.xlsx"]  
     sheet_names = [[0, 1], [0, 1]]  
