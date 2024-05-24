@@ -1,6 +1,6 @@
 **README for `marks_analysis`**
 
-**Marks Analysis Package**
+**Marks Analysis**
 `marks_analysis` is a Python package designed for analyzing exam marks data. It includes functions for preprocessing data, performing statistical analyses, generating visualizations, and saving results. The package ensures that the analysis is robust and adaptable to changes in the dataset, including the absence of specific examiners.
 
 ### Table of Contents
