@@ -48,7 +48,6 @@ If you have several files, update ```sheet_names``` accordingly. The primary dat
     df_paper = preprocess_paper_data(dfs[1].append(dfs[3]))
 ```
 3.  **Analyze data by examiner and marks:**
-4. 
 ```
 	analyze_data(df_marker, 'Examiner', 'Initial Mark', boards=[None, 'DPPE', 'DMHP'])  
     analyze_data(df_marker, 'Examiner', 'Agreed Mark', boards=[None, 'DPPE', 'DMHP'])  
@@ -56,7 +55,7 @@ If you have several files, update ```sheet_names``` accordingly. The primary dat
  ```
  Note: here you may add or remove different examination boards. 
  
- 4.  **Analyze data by examinerer:**
+ 4.  **Analyze supplementary data by examiner:**
 ```
 analyze_all_examiners(df_marker)
 ```
@@ -201,7 +200,7 @@ These figures are used to visually assess the marking patterns and identify any 
 -   **File Types**: CSV, HTML, LaTeX
 -   **Usage**: The markdown_files directory contains detailed breakdown tables of the analysis results. These files include:
     -   **CSV**: Easily importable into spreadsheet software for further analysis or reporting.
-    -   **HTML**: Suitable for viewing in web browsers or embedding into web pages and reports.
+    -   **HTML**: Suitable for viewing in web browsers or embedding into reports.
     -   **LaTeX**: Ideal for inclusion in presentations if needed.
 
 These breakdown tables provide comprehensive statistical summaries for different categories (e.g., examiners, papers) and can be used for further analysis and documentation.
