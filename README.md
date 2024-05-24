@@ -49,7 +49,7 @@ If you have several files, update ```sheet_names``` accordingly. The primary dat
 ```
 3.  **Analyze data by examiner and marks:**
 ```
-	analyze_data(df_marker, 'Examiner', 'Initial Mark', boards=[None, 'DPPE', 'DMHP'])  
+    analyze_data(df_marker, 'Examiner', 'Initial Mark', boards=[None, 'DPPE', 'DMHP'])  
     analyze_data(df_marker, 'Examiner', 'Agreed Mark', boards=[None, 'DPPE', 'DMHP'])  
     analyze_data(df_paper, 'Paper', 'Agreed Mark', boards=[None, 'DPPE', 'DMHP'])
  ```
